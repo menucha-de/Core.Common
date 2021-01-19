@@ -1,0 +1,24 @@
+Bundle-Name: Ha-VIS Util Core Common
+Bundle-SymbolicName: havis.util.core-common
+Bundle-Version: 2.6.2
+Implementation-Version: 2.6
+Bundle-ManifestVersion: 2
+Bundle-Vendor: HARTING IT_SD
+Bundle-Activator: havis.util.core.common.osgi.Activator
+Havis-Bundle: /OSGI-INF/havis.util.core-common.properties
+Import-Package: 
+ com.fasterxml.jackson.annotation,
+ com.fasterxml.jackson.core,
+ com.fasterxml.jackson.databind,
+ havis.util.core,
+ havis.util.core.app,
+ havis.util.core.license,
+ havis.util.core.log,
+ havis.util.core.rmi,
+ javax.xml.bind,
+ org.h2;resolution:=optional,
+ org.osgi.framework;resolution:=optional,
+ org.osgi.framework.wiring;resolution:=optional,
+ org.osgi.util.tracker;resolution:=optional
+Export-Package: 
+ havis.util.core.common.license

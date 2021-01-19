@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+	<info organisation="havis/util/core" module="core-common" />
+
+	<configurations>
+		<conf name="default" />
+		<conf name="module" />
+		<conf name="test" />
+	</configurations>
+
+	<dependencies>
+		<dependency org="com/h2database" name="h2" rev="${h2.version}" />
+		<dependency org="havis/util/core" name="core-api" rev="${havis.version}" conf="default,module" />
+
+		<dependency org="org/apache/felix" name="org.apache.felix.main" rev="${felix.version}" conf="default->default,src" />
+		<dependency org="org/apache/felix" name="org.apache.felix.framework" rev="${felix.version}" conf="default->default,src" />
+		<dependency org="org/apache/felix" name="org.apache.felix.resolver" rev="latest.integration" conf="default->default,src" />
+
+		<dependency org="com/fasterxml/jackson/core" name="jackson-core" rev="${jackson.version}" conf="module" />
+		<dependency org="com/fasterxml/jackson/core" name="jackson-annotations" rev="${jackson.version}" conf="module" />
+		<dependency org="com/fasterxml/jackson/core" name="jackson-databind" rev="${jackson.version}" conf="default,module" />
+
+		<dependency org="org/osgi" name="org.osgi.core" rev="${osgi.version}" conf="default" />
+		<dependency org="org/osgi" name="org.osgi.util.tracker" rev="${osgi-tracker.version}" conf="default" />
+
+		<dependency org="org/jmockit" name="jmockit" rev="${jmockit.version}" conf="default" />
+		<dependency org="org/jmockit" name="jmockit-coverage" rev="${jmockit.version}" conf="default" />
+		<dependency org="junit" name="junit" rev="${junit.version}" conf="default" />
+
+		<dependency org="javax/xml/bind" name="jaxb-api" rev="${jaxb.version}" conf="module->default" />
+
+		<!-- for testing -->
+		<dependency org="havis/transport" name="transport-api" rev="${havis.version}" conf="test->default,src" />
+		<dependency org="havis/transport" name="transport-common" rev="${havis.version}" conf="test->default,src" />
+		<dependency org="havis/transform" name="transform-api" rev="${havis.version}" conf="test->default" />
+		<dependency org="havis/transform" name="transform-common" rev="${havis.version}" conf="test->default" />
+		<dependency org="havis/util" name="monitor" rev="${havis.version}" conf="test->default" />
+		<dependency org="org/jboss/resteasy" name="resteasy-jaxrs" rev="${resteasy.version}" conf="test->default" />
+		<dependency org="org/jboss/resteasy" name="resteasy-jdk-http" rev="${resteasy.version}" conf="test->default" />
+		<dependency org="org/jboss/resteasy" name="resteasy-jackson2-provider" rev="${resteasy.version}" conf="test->default" />
+		<dependency org="org/jboss/resteasy" name="resteasy-jaxb-provider" rev="${resteasy.version}" conf="test->default" transitive="false" />
+		<dependency org="com/fasterxml/jackson/jaxrs" name="jackson-jaxrs-base" rev="2.4.6" conf="test->default" />
+		<dependency org="com/fasterxml/jackson/jaxrs" name="jackson-jaxrs-json-provider" rev="2.4.6" conf="test->default" />
+		<dependency org="javax/ws/rs" name="javax.ws.rs-api" rev="${jaxws-api.version}" conf="test->default" />
+	</dependencies>
+
+</ivy-module>
