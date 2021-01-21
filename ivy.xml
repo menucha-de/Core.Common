@@ -15,7 +15,7 @@
 
 		<dependency org="org/apache/felix" name="org.apache.felix.main" rev="${felix.version}" conf="default->default,src" />
 		<dependency org="org/apache/felix" name="org.apache.felix.framework" rev="${felix.version}" conf="default->default,src" />
-		<dependency org="org/apache/felix" name="org.apache.felix.resolver" rev="latest.integration" conf="default->default,src" />
+		<dependency org="org/apache/felix" name="org.apache.felix.resolver" rev="${felix.resolver.version}" conf="default->default,src" />
 
 		<dependency org="com/fasterxml/jackson/core" name="jackson-core" rev="${jackson.version}" conf="module" />
 		<dependency org="com/fasterxml/jackson/core" name="jackson-annotations" rev="${jackson.version}" conf="module" />
