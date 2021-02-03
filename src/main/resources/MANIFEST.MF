@@ -1,7 +1,7 @@
 Bundle-Name: Ha-VIS Util Core Common
 Bundle-SymbolicName: havis.util.core-common
-Bundle-Version: 2.6.2
-Implementation-Version: 2.6
+Bundle-Version: 2.7.0
+Implementation-Version: 2.7
 Bundle-ManifestVersion: 2
 Bundle-Vendor: HARTING IT_SD
 Bundle-Activator: havis.util.core.common.osgi.Activator
