@@ -51,7 +51,7 @@ public class CommonAppInfo {
 			log.log(Level.FINE, "Changing licensing mode to {0}.", enabled);
 			LICENSING_ENABLED = enabled;
 		} else {
-			LICENSING_ENABLED = true;
+			LICENSING_ENABLED = false;
 		}
 	}
 
