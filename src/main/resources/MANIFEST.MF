@@ -3,7 +3,7 @@ Bundle-SymbolicName: havis.util.core-common
 Bundle-Version: 2.7.0
 Implementation-Version: 2.7
 Bundle-ManifestVersion: 2
-Bundle-Vendor: HARTING IT_SD
+Bundle-Vendor: Menucha Team <info@menucha.de>
 Bundle-Activator: havis.util.core.common.osgi.Activator
 Havis-Bundle: /OSGI-INF/havis.util.core-common.properties
 Import-Package: 
